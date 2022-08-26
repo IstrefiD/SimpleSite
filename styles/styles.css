@@ -1,0 +1,24 @@
+.navigation
+{ 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.navigation .list
+{
+    list-style-type: none;
+    
+}
+
+.navigation .list a
+{
+    display: inline-block;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
