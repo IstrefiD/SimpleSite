@@ -1,29 +1,41 @@
 body
 {
   font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
 }
 
+.main-header
+{
+  position: static;
+}
+
+.main-header .index-header
+{
+  padding: 2px;
+  text-align: center;
+  background: #76a79d;
+  color: white;
+  font-size: 15px;
+  box-shadow: rgba(194, 191, 191, 0.425) 0px -50px 36px -28px inset;
+}
 
 .navigation
 { 
-display: flex;
-align-items: center;
-justify-content: center;
-
+text-align: center;
 }
 
 .navigation .list
 {
     list-style-type: none;
+    padding-top: 25px;
     
 }
 
 .navigation .list a
 {
-    display: inline-block;
     text-decoration: none;
     justify-content: space-between;
-    padding: 20px;
+    padding: 60px;
     color: black;
     font-size: 22px;
 
@@ -40,27 +52,36 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #76a79d;
     gap: 100px;
   }
   
   .item {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 200px;
     height: 200px;
-    background-color: rgb(28, 150, 221);
-    border: 1px solid black;
     
   }
-
-  .item .img-printer
+  
+  .item .img-support,
+  .item .img-printer,
+  .item .img-pc
   {
    width: 200px;
    height: 200px;
   }
 
-  .img-printer:hover
+
+  .container img:hover
   {
-    box-shadow: 0 10px 15px rgba(5, 174, 226, 0.548);
+    padding-top: 20px;
+  }
+
+  .container .item img:hover
+  {
+    box-shadow: 0 10px 30px rgba(5, 174, 226, 0.548);
+
   }
 
 
@@ -75,7 +96,8 @@ justify-content: center;
 
 
   .footer {
-    background-color: rgba(5, 174, 226, 0.548);
+    background-color: #76a79d;
+    box-shadow: rgba(194, 191, 191, 0.425) 0px -50px 36px -28px inset;
     position: absolute;
     left: 0;
     bottom: 0;
